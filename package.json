@@ -1,0 +1,26 @@
+{
+  "name": "co-retry",
+  "version": "0.0.1",
+  "description": "Execute function which returns yieldable object with retry mechanism when error happens.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ma63d/co-retry.git"
+  },
+  "keywords": [
+    "co",
+    "retry",
+    "error"
+  ],
+  "author": "chuck liu (http://chuckliu.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ma63d/co-retry/issues"
+  },
+  "homepage": "https://github.com/Ma63d/co-retry#readme"
+}
