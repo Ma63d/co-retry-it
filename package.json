@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ma63d/co-retry.git"
+    "url": "git+https://github.com/Ma63d/co-retry-it.git"
   },
   "keywords": [
     "co",
@@ -20,7 +20,7 @@
   "author": "chuck liu (http://chuckliu.me)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ma63d/co-retry/issues"
+    "url": "https://github.com/Ma63d/co-retry-it/issues"
   },
-  "homepage": "https://github.com/Ma63d/co-retry#readme"
+  "homepage": "https://github.com/Ma63d/co-retry-it#readme"
 }
