@@ -6,7 +6,9 @@ When using [co](https://github.com/tj/co)/[koa](https://github.com/koajs/koa), i
 
 ## install
 
+```bash
 npm i co-retry-it
+```
 
 ## example
 
