@@ -3,34 +3,34 @@ var co = require('co')
 var time = 0
 
 //// simulate a function that returns a promise which may success or fail
-//function generatePromise (num) {
-//    return new Promise(function (resolve, reject) {
-//        setTimeout(function(){
-//            var result = Math.random()
-//            if (result > num){
-//                reject(new Error('result is too big'))
-//            } else {
-//                resolve(result)
-//            }
-//        }, 100)
-//    })
-//}
-//
-//// execute the function with 2 times retry at most
-//co(function* () {
-//    var result = yield retry(generatePromise.bind(null, 0.2), {times:2})
-//    console.log(result)
-//})
-//
-//// function that returns an array of promises, each may success or fail
-//function generateArray () {
-//    return [generatePromise(0.3), generatePromise(0.4)]
-//}
-//
-//co(function* () {
-//    var result = yield retry(generateArray, {times:5})
-//    console.log(result)
-//})
+function generatePromise (num) {
+    return new Promise(function (resolve, reject) {
+        setTimeout(function(){
+            var result = Math.random()
+            if (result > num){
+                reject(new Error('result is too big'))
+            } else {
+                resolve(result)
+            }
+        }, 100)
+    })
+}
+
+// execute the function with 2 times retry at most
+co(function* () {
+    var result = yield retry(generatePromise.bind(null, 0.2), {times:2})
+    console.log(result)
+})
+
+// function that returns an array of promises, each may success or fail
+function generateArray () {
+    return [generatePromise(0.3), generatePromise(0.4)]
+}
+
+co(function* () {
+    var result = yield retry(generateArray, {times:5})
+    console.log(result)
+})
 //
 //
 //function* generatorFunction () {
