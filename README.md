@@ -6,8 +6,9 @@ When using [co](https://github.com/tj/co)/[koa](https://github.com/koajs/koa), i
 
 ## install
 
+```bash
 npm i co-retry-it
-
+```
 ## example
 
 
@@ -45,6 +46,10 @@ co(function* () {
 
 
 ```
+## parameter
+`retry(func, options)`
+`func`, function that returns a yieldable object.
+`options`, an object including extra options.
 
 ## options
 ### times `Number or Function`
