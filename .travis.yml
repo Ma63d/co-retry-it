@@ -6,6 +6,7 @@ node_js:
 - 7
 deploy:
   provider: npm
+  email: liucan@ebupt.com
   on:
     tags: true
   api_key:
