@@ -14,7 +14,7 @@
     "eslint-plugin-standard": "^2.0.1"
   },
   "scripts": {
-    "test": "mocha test/*.js",
+    "test": "eslint *.js && mocha test/*.js",
     "lint": "eslint *.js",
     "lint-html": "eslint *.js -f html -o ./reports/lint-results.html",
     "lint-fix": "eslint --fix *.js"
