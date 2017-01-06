@@ -13,14 +13,18 @@
  * @return {Object} if finally fail return {success: false, error:error} (error is the last one that happened),
  * else return {success:true, data:data}
  */
-module.exports = function* (genYieldableObj, options){
+module.exports = function* (genYieldableObj, options) {
     options = options || {}
+
+    if (!genYieldableObj) {
+        throw new Error('missing first argument : func')
+    }
 
     var retryFunc
 
     var args = options.arguments
 
-    if (options && (typeof options.times === 'function') ){
+    if (options && (typeof options.times === 'function')) {
         retryFunc = options.times
     }
 
@@ -28,22 +32,22 @@ module.exports = function* (genYieldableObj, options){
     var haveDone = 0
     var error
 
-    function* next (){
+    function* next () {
         haveDone++
         try {
-            var data = yield genYieldableObj.apply(null, args && args.call(null, error))
+            var data = yield genYieldableObj.apply(null, args && args(error))
             return {
                 success: true,
                 data: data
             }
         } catch (err) {
             error = err
-            if (retryFunc !== undefined && retryFunc(err) || (haveDone <= timesToRetry) ) {
+            if (retryFunc !== undefined && retryFunc(err) || (haveDone <= timesToRetry)) {
                 return yield next
-            }  else {
+            } else {
                 return {
                     success: false,
-                    error:err
+                    error: err
                 }
             }
         }
