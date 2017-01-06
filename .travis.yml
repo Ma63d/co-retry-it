@@ -1,6 +1,12 @@
 language: node_js
 node_js:
-  - 4
-  - 5
-  - 6
-  - 7
+- 4
+- 5
+- 6
+- 7
+deploy:
+  provider: npm
+  on:
+    tags: true
+  api_key:
+    secure: LV6oX272+SkoTEyK7nekIYmDLctNuyUi7nCwYKdXSUbRZDgiBzylh5t7Yv9xXpII2S97IOdn6tkAYjuu4ukGrN3qV6jdAhcX8t0v8b7X47Hnvqp5c2Ah5bK1iRp9TNgmv1Q0WTxlN1hiRu4kg7cFyNLvD3/stA2Wm9cCGGp/Kd8dmv+lag42oi+vNKgweoDg6jxFhElvXapcABNWa4I6mVFeFtqty3Sq1aC+qld/rJCM3KCnnIhdqyoq1PetUaYcFlopsMLtjPUwZDLiN/IA3Do9mdoa87goNnfngQ7Tv4SWp4AHqvcQ3k6XTFJOKmYGBSvlwBvWHOJaBkCQnyA5pqH75G1Pt/DQ6svGny3Urwnbxtp3gVoTUj5UauhhBsYWMGRaDWdrdo1JtgdZQ1nrTyP0VHh1cQbruSC6oa2qkuJM8tTzGlCSD7/aX4G0oG2webrbGBA79Eo7Y/+IBlo6ewsLGZun3230pSZ6UEroFStNO0Wyu9z15/RNs4lt7QLHOokuBMibHI/Vhjdh8sl+n953jgQzyqAz2114UR63aHlk8qVMKjzB0vQGfMxH9/EvpORSBk/LM96yHheWp0ytryKN2znHma9XiCmi6D9upYW62RJZP1qmY+mmP96nhe0D6jQfydDk59dWqJdobKWv8RSSy3xr9/Gj3YH8ibNxtOo=

@@ -1,4 +1,4 @@
-# co-retry-it
+# co-retry-it ![](https://travis-ci.org/Ma63d/co-retry-it.svg?branch=master)
 
 Execute function which returns a yieldable object with retry mechanism when error happens.
 
