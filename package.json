@@ -1,6 +1,6 @@
 {
   "name": "co-retry-it",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Execute function which returns yieldable object with retry mechanism when error happens.",
   "main": "index.js",
   "dependencies": {},

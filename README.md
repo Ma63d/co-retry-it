@@ -1,4 +1,6 @@
-# co-retry-it ![](https://travis-ci.org/Ma63d/co-retry-it.svg?branch=master)
+# co-retry-it
+
+![](https://travis-ci.org/Ma63d/co-retry-it.svg?branch=master) [![npm package](https://img.shields.io/npm/v/co-retry-it.svg)](https://www.npmjs.com/package/co-retry-it)
 
 Execute function which returns a yieldable object with retry mechanism when error happens.
 
