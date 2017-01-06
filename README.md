@@ -87,8 +87,9 @@ co(function* () {
 ```
 
 ### arguments `Function`
-a function generates an arguments array for execution and that receives an argument 'error' which is the last error(would be undefined in first execution)
+a function generates **an arguments array** for execution and that receives an argument 'error' which is the last error(would be undefined in first execution)
 
+**remember to return an array**
 
 ```javascript
  //simulate a crowded network
